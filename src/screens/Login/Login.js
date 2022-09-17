@@ -19,14 +19,17 @@ const Login = () => {
   const [password, setPassword] = useState('')
 
   const handleSignUp = () => {
-    createUserWithEmailAndPassword(authentication, email, password)
-      .then((userCredential) => {
-        // Signed in
-        console.log(userCredential)
+    auth.createUserWithEmailAndPassword(authentication, email, password)
+      .then((result) => {
+        dispatch(setActiveUser({
+          // following is the action payload
+          userName: result.user.displayName,
+          userEmail: result.user.email
+        }))
       })
       .catch((error) => {
         // Error during authentication
-        console.log(error)
+        alert(error.message)
       })
   }
 
