@@ -46,9 +46,12 @@ const themeSlice = createSlice({
   },
 });
 
-export const { setUser, logout } = userSlice.actions;
+export const { setActiveUser, setUserLogOutState } = userSlice.actions;
 export const { setMusic } = musicListSlice.actions;
 export const { toggleTheme } = themeSlice.actions;
+
+export const selectUserName = state => state.user.userName
+export const selectUserEmail = state => state.user.userEmail
 
 export const store = configureStore({
   reducer: combineReducers({
