@@ -50,15 +50,15 @@ _For more examples, please refer to the [Documentation](https://reactnative.dev/
 
 ## Roadmap
 
--   [ ] UI of sign in & sign up pages
--   [ ] UI of setting page
--   [ ] UI of page
+-   [x] UI of sign in & sign up pages
+-   [x] UI of setting page
+-   [x] UI of page
 -   [ ] UI of search page
 -   [ ] Setting up search with spotify API
--   [ ] Theme change button functionality
+-   [x] Theme change button functionality
 -   [ ] Sorting plugin for imports
 -   [ ] Absolute path property for imports
--   [ ] Implement AWS Amplify
+-   [ ] Implementation of AWS Amplify as backend
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
@@ -83,7 +83,7 @@ Don't forget to give the project a star! Thanks again!
 
 [@BilginBehzat](https://twitter.com/BilginBehzat) - bbilgin.erdem@gmail.com
 
-Project Link: [Whatsapp Clone](https://github.com/patika-218-akbank-reactnative-bootcamp/assignment-3-kihlaj)
+Project Link: [Spotify Clone](https://github.com/patika-218-akbank-reactnative-bootcamp/assignment-5-kihlaj)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
