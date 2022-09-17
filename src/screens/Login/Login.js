@@ -1,11 +1,10 @@
 import { KeyboardAvoidingView, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import React, { useState } from 'react'
 import { useHeaderHeight } from '@react-navigation/elements'
-import { createUserWithEmailAndPassword } from "firebase/auth"
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 
 import { authentication } from '../../firebase/firebase-config'
-import { setActiveUser, setUserLogOutState, selectUserEmail, selectUserName } from '../../store/store'
+import { setActiveUser } from '../../store/store'
 
 import styles from './Login.style'
 
@@ -13,8 +12,6 @@ const Login = () => {
   const headerHeight = useHeaderHeight()
   const dispatch = useDispatch()
 
-  const userName = useSelector(selectUserName)
-  const userEmail = useSelector(selectUserEmail)
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
