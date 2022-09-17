@@ -1,7 +1,7 @@
 import { KeyboardAvoidingView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import React, { useState } from 'react'
 import { useHeaderHeight } from '@react-navigation/elements'
-import { authentication } from '../firebase/firebase-config'
+import { authentication } from '../../firebase/firebase-config'
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
