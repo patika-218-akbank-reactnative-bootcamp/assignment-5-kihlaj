@@ -7,7 +7,7 @@ import { Provider, useSelector } from 'react-redux';
 import { store } from './store';
 
 const Contain = () => {
-  const isUserSignedIn = useSelector(state => state.user.user);
+  const isUserSignedIn = useSelector(selectUserName);
 
   return (
     <NavigationContainer>

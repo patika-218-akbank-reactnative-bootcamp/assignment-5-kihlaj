@@ -4,7 +4,7 @@ import { useHeaderHeight } from '@react-navigation/elements'
 import { authentication } from '../../firebase/firebase-config'
 import { createUserWithEmailAndPassword } from "firebase/auth"
 import { useDispatch, useSelector } from 'react-redux'
-import { setActiveUser }
+import { setActiveUser, setUserLogOutState, selectUserEmail, selectUserName } from '../../store/store'
 
 import styles from './Login.style'
 

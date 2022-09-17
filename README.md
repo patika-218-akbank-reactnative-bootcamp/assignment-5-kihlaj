@@ -7,19 +7,19 @@
 <br />
 <div align="center">
   <a href="https://spotify.com">
-    <img src="./telegramclone/src/assets/images/spotify_logo.png" alt="Logo" width="80">
+    <img src="./assets/Spotify_App_Logo.svg.png" alt="Logo" width="80">
   </a>
 
   <h3 align="center">Spotify Clone</h3>
 
   <p align="center">
-    Created with Expo 46.0.10!
+    Created with Expo 46.0.10! 
     <br />
     <br />
     <br />
-    <a href="https://github.com/patika-218-akbank-reactnative-bootcamp/assignment-3-kihlaj/issues">Report Bug</a>
+    <a href="https://github.com/patika-218-akbank-reactnative-bootcamp/assignment-5-kihlaj/issues">Report Bug</a>
     ·
-    <a href="https://github.com/patika-218-akbank-reactnative-bootcamp/assignment-3-kihlaj/issues">Request Feature</a>
+    <a href="https://github.com/patika-218-akbank-reactnative-bootcamp/assignment-5-kihlaj/issues">Request Feature</a>
   </p>
 </div>
 
@@ -32,17 +32,19 @@
 [![Product Name Screen Shot][product-screenshot1]](https://example.com)
 [![Product Name Screen Shot][product-screenshot2]](https://example.com)
 
-I used react-native-vector-icons, react-navigation, spotify API, firebase and aws amplify.
+I used react-native-vector-icons, react-navigation, spotify API, firebase and aws amplify. I used expo to create this project.
 
 I wanted to try aws amplify to learn more about backend.
 
 ## Usage
 
-After installing dependencies and `npm install` or `yarn`, you can start the project by starting metro,
+After installing dependencies with `npm install` or `yarn`, you can start the project by starting metro,
 
 ```bash
 npx expo start
 ```
+
+and then you can run the app on your device or emulator.
 
 _For more examples, please refer to the [Documentation](https://reactnative.dev/docs/environment-setup)_
 
@@ -99,7 +101,7 @@ Project Link: [Spotify Clone](https://github.com/patika-218-akbank-reactnative-b
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/bbilginerdem/
-[product-screenshot1]: ./telegramclone/src/assets/images/ss-1.png
-[product-screenshot2]: ./telegramclone/src/assets/images/ss-2.png
-[product-screenshot3]: ./telegramclone/src/assets/images/ss-3.png
-[product-screenshot4]: ./telegramclone/src/assets/images/ss-4.png
+[product-screenshot1]: ./assets/images/ss-1.png
+[product-screenshot2]: ./assets/images/ss-2.png
+[product-screenshot3]: ./assets/images/ss-3.png
+[product-screenshot4]: ./assets/images/ss-4.png

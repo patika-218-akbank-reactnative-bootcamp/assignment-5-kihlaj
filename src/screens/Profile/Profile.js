@@ -2,7 +2,7 @@ import { View, Text, Image } from 'react-native';
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { logout } from '../../store';
+import { setUserLogOutState } from '../../store/store';
 import { useDispatch, useSelector } from 'react-redux';
 import CustomButton from '../../components/CustomButton';
 import styles from '../Profile/ProfileStyle';
@@ -41,7 +41,7 @@ const Profile = () => {
         title={'Logout'}
         onPress={async () => {
           await AsyncStorage.removeItem('userStorage');
-          dispatch(logout());
+          dispatch(setUserLogOutState());
         }}
       />
     </View>
