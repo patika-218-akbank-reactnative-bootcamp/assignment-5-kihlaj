@@ -1,17 +1,25 @@
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image } from 'react-native'
 import React from 'react';
-import { useNavigation } from '@react-navigation/native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { setUserLogOutState } from '../../store/store';
-import { useDispatch, useSelector } from 'react-redux';
-import CustomButton from '../../components/CustomButton';
-import styles from '../Profile/ProfileStyle';
+import { useNavigation } from '@react-navigation/native'
+import { useDispatch, useSelector } from 'react-redux'
+
+import CustomButton from '../../components/CustomButton'
+import styles from '../Profile/ProfileStyle'
+import { authentication } from '../../firebase/firebase-config'
+import { setUserLogOutState } from '../../store/store'
 
 const Profile = () => {
-  const dispatch = useDispatch();
-  const { navigate } = useNavigation();
-  const userInRedux = useSelector(state => state.user.user);
-  const theme = useSelector(state => state.theme.activeTheme);
+  const { navigate } = useNavigation()
+  const dispatch = useDispatch()
+
+  const userInRedux = useSelector(state => state.user.user)
+  const theme = useSelector(state => state.theme.activeTheme)
+
+  const handleSignOut = () => {
+    authentication.signOut().then(() => {
+      dispatch(setUserLogOutState())
+    }).catch((err) => alert(err.message))
+  }
 
   return (
     <View
@@ -39,10 +47,7 @@ const Profile = () => {
       />
       <CustomButton
         title={'Logout'}
-        onPress={async () => {
-          await AsyncStorage.removeItem('userStorage');
-          dispatch(setUserLogOutState());
-        }}
+        onPress={handleSignOut}
       />
     </View>
   );

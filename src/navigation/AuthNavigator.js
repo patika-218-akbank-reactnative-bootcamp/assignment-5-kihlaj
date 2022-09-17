@@ -17,7 +17,7 @@ const AuthNavigaiton = () => {
           headerShown: true,
         }}
         name="SignUp"
-        component={SignUp}
+        component={Register}
       />
     </AuthStack.Navigator>
   );

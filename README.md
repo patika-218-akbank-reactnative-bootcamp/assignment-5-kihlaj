@@ -32,7 +32,7 @@
 [![Product Name Screen Shot][product-screenshot1]](https://example.com)
 [![Product Name Screen Shot][product-screenshot2]](https://example.com)
 
-I used react-native-vector-icons, react-navigation, spotify API, firebase and aws amplify. I used expo to create this project.
+I used react-native-vector-icons, react-navigation, spotify API, firebase and aws amplify.
 
 I wanted to try aws amplify to learn more about backend.
 
@@ -101,7 +101,7 @@ Project Link: [Spotify Clone](https://github.com/patika-218-akbank-reactnative-b
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/bbilginerdem/
-[product-screenshot1]: ./assets/images/ss-1.png
-[product-screenshot2]: ./assets/images/ss-2.png
-[product-screenshot3]: ./assets/images/ss-3.png
-[product-screenshot4]: ./assets/images/ss-4.png
+[product-screenshot1]: ./assets/ss-1.png
+[product-screenshot2]: ./assets/ss-2.png
+[product-screenshot3]: ./assets/ss-3.png
+[product-screenshot4]: ./assets/ss-4.png

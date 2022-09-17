@@ -1,10 +1,12 @@
 import { combineReducers, configureStore, createSlice } from '@reduxjs/toolkit';
 
+// initial state for the store
 const initialState = {
   userName: null,
   userEmail: null
 }
 
+// create a slice of the store
 const userSlice = createSlice({
   name: 'user',
   initialState,
@@ -21,6 +23,7 @@ const userSlice = createSlice({
     }
   },
 });
+
 const musicListSlice = createSlice({
   name: 'musicList',
   initialState: {
@@ -32,6 +35,7 @@ const musicListSlice = createSlice({
     },
   },
 });
+
 const themeSlice = createSlice({
   name: 'theme',
   initialState: {
@@ -53,6 +57,7 @@ export const { toggleTheme } = themeSlice.actions;
 export const selectUserName = state => state.user.userName
 export const selectUserEmail = state => state.user.userEmail
 
+// combine all the slices
 export const store = configureStore({
   reducer: combineReducers({
     user: userSlice.reducer,
